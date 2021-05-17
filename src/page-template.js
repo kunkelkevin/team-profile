@@ -2,7 +2,7 @@ const generateEmployeeCards = employees => {
     let cardsHtml = "";
     let third = "";
     employees.forEach(employee => {
-        cardsHtml += `<div class = "card col-3 m-3">
+        cardsHtml += `<div class = "card col-md-3 m-3">
         <div class = card-header>`;
         cardsHtml += employee.getName();
         switch (employee.getRole()){
