@@ -154,9 +154,20 @@ const employeeInfo = (type) => {
                 break;      
         }
         employees.push(employee);
-        console.log(employees);
         employeeType();
     });
 }
 
 employeeInfo('Manager');
+// employees[0] = new Manager("Jane Doe", 123, "jane@email.com", '555-1234');
+// employees[1] = new Engineer("Bob Johnson", 456, "bob@email.com", 'bobj');
+// employees[2] = new Intern("Mary Jane", 789, "mary@email.com", 'High University');
+// console.log(employees);
+// const pageHTML = generatePage(employees);
+//           fs.writeFile('./dist/index.html',pageHTML, err =>{
+//               if (err) {
+//                   console.log('There was a problem in creating the file');
+//               } else {
+//                   console.log('Team profile has been created, you will find your html file in the dist folder');
+//               }
+//           })
