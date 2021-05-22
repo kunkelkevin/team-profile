@@ -19,7 +19,7 @@ In order to run the program, you can download or clone the program from my GitHu
 
 ## Usage
 
-The team profile generator can be used to create a dynamic layout of employee information based on command line prompts. A video of how the program operates can be seen [here](https://drive.google.com/file/d/1ULqBJk9V7yC2YRb2peWRWL6RRdODs0Xq/view).
+The team profile generator can be used to create a dynamic layout of employee information based on command line prompts. A video of how the program operates can be seen [here](https://drive.google.com/file/d/1IMwOQQogHbe365GF4Zbu3N0u9CbiVGzn/view).
 
 Screenshot showing sample output of team profile:
 ![Team Profile Screenshot](/img/Screenshot.png "Team Profile Screenshot")
