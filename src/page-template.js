@@ -1,37 +1,39 @@
-const generateEmployeeCards = employees => {
-    let cardsHtml = "";
-    let third = "";
-    employees.forEach(employee => {
-        cardsHtml += `<div class = "card col-md-3 m-3">
-        <div class = card-header>`;
-        cardsHtml += employee.getName();
-        switch (employee.getRole()){
-            case 'manager':
-                cardsHtml += '<h2 class="card-subtitle"><i class="bi bi-door-open"></i> Manager</h2>';
-                third = employee.getNumber();
-                break;
-            case 'engineer':
-                cardsHtml += `<h2 class="card-subtitle"><i class="bi bi-eyeglasses"></i></i> Engineer</h2>`;
-                third = employee.getGithub();
-                break;
-            case 'intern':
-                cardsHtml += '<h2 class="card-subtitle"><i class="bi bi-book"></i> Intern</h2>';
-                third = employee.getSchool();
-                break;       
-        }
-        cardsHtml += `</div>
+const generateEmployeeCards = (employees) => {
+  let cardsHtml = "";
+  let third = "";
+  employees.forEach((employee) => {
+    cardsHtml += `<div class = "card col-md-3 m-3 p-0">
+        <div class = "card-header bg-primary">`;
+    cardsHtml += employee.getName();
+    switch (employee.getRole()) {
+      case "manager":
+        cardsHtml +=
+          '<h2 class="card-subtitle"><i class="bi bi-door-open"></i> Manager</h2>';
+        third = employee.getNumber();
+        break;
+      case "engineer":
+        cardsHtml += `<h2 class="card-subtitle"><i class="bi bi-eyeglasses"></i></i> Engineer</h2>`;
+        third = employee.getGithub();
+        break;
+      case "intern":
+        cardsHtml +=
+          '<h2 class="card-subtitle"><i class="bi bi-book"></i> Intern</h2>';
+        third = employee.getSchool();
+        break;
+    }
+    cardsHtml += `</div>
         <ul class="list-group list-group-flush">
         `;
-        cardsHtml += employee.getId();
-        cardsHtml += employee.getEmail();
-        cardsHtml += third;
-        cardsHtml += `</div>`
-    });
-    return cardsHtml; 
+    cardsHtml += employee.getId();
+    cardsHtml += employee.getEmail();
+    cardsHtml += third;
+    cardsHtml += `</div>`;
+  });
+  return cardsHtml;
 };
 
-const generatePage = employees => {
-return `
+const generatePage = (employees) => {
+  return `
 <!DOCTYPE html> 
 <html lang="en"> 
 
@@ -63,6 +65,6 @@ return `
 </body>
 </html>
 `;
-}
+};
 
 module.exports = generatePage;

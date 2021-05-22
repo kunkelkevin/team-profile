@@ -15,7 +15,7 @@ There are checks in place for the user input to ensure information is supplied f
 
 ## Installation
 
-In order to run the program, you can download or clone the program from my GitHub site. In the root directory of the program, ensure all packages are available by typing 'npm init' and 'npm install inquirer' in the command line. Then the program should be available to execute with "node index.js".
+In order to run the program, you can download or clone the program from my GitHub site. In the root directory of the program, ensure all packages are available by typing 'npm init' and 'npm install' in the command line. Then the program should be available to execute with "node index.js".
 
 ## Usage
 
@@ -26,7 +26,7 @@ Screenshot showing sample output of team profile:
 
 ## Testing
 
-Testing was done using Jest. To run the tests, first install Jest using "npm install jest --save-dev" in the command line, then "npm test" to see the results. Tests were created to ensure each of the four classes properly created an object. Each method within the classes were also tested to ensure proper information was being relayed.
+Testing was done using Jest. To run the tests type "npm test" in the command line to see the results. Tests were created to ensure each of the four classes properly created an object. Each method within the classes were also tested to ensure proper information was being relayed.
 
 ## Questions
 
